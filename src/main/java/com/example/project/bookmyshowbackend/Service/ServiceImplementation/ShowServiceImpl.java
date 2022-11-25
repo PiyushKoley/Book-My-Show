@@ -70,7 +70,7 @@ public class ShowServiceImpl implements ShowService {
             showSeatsEntityList.add(showSeatsEntity);
         }
 
-
+        // setting show for each showseatsEntity inside loop only ...
 
 
         showEntity.setListOfShowSeatsEntity(showSeatsEntityList);
