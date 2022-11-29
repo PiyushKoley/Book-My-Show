@@ -12,6 +12,7 @@ public class TicketConverter {
                 .id(ticketEntity.getId())
                 .amount(ticketEntity.getAmount())
                 .allottedSeats(ticketEntity.getAllottedSeats())
+                .listOfBookedSeats(ticketEntity.getListOfBookedSeats())
                 .build();
     }
 }
