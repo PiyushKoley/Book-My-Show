@@ -70,7 +70,10 @@ public class TicketServiceImpl implements TicketService {
         }
 
         //Step 2...
-        TicketEntity ticketEntity = TicketEntity.builder().user(userEntity).listOfBookedSeats(bookedSeats).build();
+        TicketEntity ticketEntity = TicketEntity.builder()
+                                    .user(userEntity)
+                                    .listOfBookedSeats(bookedSeats)
+                                    .build();
 
         //Step 3...
 
@@ -83,6 +86,7 @@ public class TicketServiceImpl implements TicketService {
             amount += showSeatsEntity.getRate();
         }
 
+        ticketEntity.setShow(showEntity);
         ticketEntity.setAmount(amount);
         ticketEntity.setAllottedSeats(convertListOfSeatsEntityToString(bookedSeats));
 

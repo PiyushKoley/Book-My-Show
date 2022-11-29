@@ -13,6 +13,6 @@ public class UserConverter {
     }
 
     public static UserResponseDto convertEntityToDto(UserEntity userEntity) {
-        return UserResponseDto.builder().id(userEntity.getId()).name(userEntity.getName()).mobileNo(userEntity.getMobileNo()).build();
+        return UserResponseDto.builder().id(userEntity.getId()).name(userEntity.getName()).listOfBookedTickets(userEntity.getListOfTickets()).mobileNo(userEntity.getMobileNo()).build();
     }
 }
